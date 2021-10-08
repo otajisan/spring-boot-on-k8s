@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: examples
+  labels:
+    istio-injection: enabled
+    opa-istio-injection: enabled

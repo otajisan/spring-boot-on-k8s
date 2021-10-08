@@ -1,0 +1,11 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: spring-boot-app-dest
+  namespace: examples
+spec:
+  host: spring-boot-app.examples.svc.cluster.local
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
